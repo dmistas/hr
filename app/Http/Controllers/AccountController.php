@@ -46,13 +46,15 @@ class AccountController extends Controller
      */
     public function show($id)
     {
+        $accounts = Account::with(['resumes', 'city'])->get();
+        dump($accounts);
         $account = Account::find($id);
         if(!$account){
             return abort(404);
         }
 //        $resumes = $account->with('resumes')->get();
         $resumes = $account->resumes;
-        dump($resumes);
+//        dump($resumes);
 //        dump(Account::with('resumes')->get());
         return $resumes;
     }

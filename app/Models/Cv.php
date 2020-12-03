@@ -15,4 +15,6 @@ class Cv extends Model
     {
         return $this->belongsTo('App\Models\Acount', 'id', 'id_account');
     }
+
+
 }

@@ -23,3 +23,7 @@ Route::resource('/resumes', \App\Http\Controllers\AccountController::class);
 Route::resource('/cv', \App\Http\Controllers\CvController::class);
 
 
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

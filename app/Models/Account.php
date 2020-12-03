@@ -15,4 +15,9 @@ class Account extends Model
     {
         return  $this->hasMany('App\Models\Cv', 'id_account', 'id');
     }
+
+    public function city()
+    {
+        return $this->belongsTo('App\Models\cities','id_city','id');
+    }
 }
