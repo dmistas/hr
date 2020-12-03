@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Models\Account;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -16,3 +16,10 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+
+Route::resource('/resumes', \App\Http\Controllers\AccountController::class);
+Route::resource('/cv', \App\Http\Controllers\CvController::class);
+
+
