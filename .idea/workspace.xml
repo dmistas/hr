@@ -2,19 +2,56 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2467c679-1b7c-4f31-ab5e-0607d0fdb3dc" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/hr.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/hr.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/City.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/Employment.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/Experience.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/Specialization.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/WorkSchedule.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/bootstrap-datepicker.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/jquery-editable-select.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/jquery.nselect.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/tagsinput.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/big-cancel.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/blue-arrow-down.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/blue-check.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/blue-label-cancel.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/blue-left-arrow.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/check.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/dark-search.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/dots.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/facebook.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/instagram.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/mdi_calendar_today.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/mini-left-arrow.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/mini-right-arrow.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/profile-foto.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/profile-skype.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/profile-telegram.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/profile-vk.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/radio.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/rub-icon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/search.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/twitter.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/vk.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/yandex.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/bootstrap-datepicker.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/bootstrap-datepicker.ru.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/jquery-editable-select.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/jquery.nselect.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/tagsinput.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/cv/cv-list.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/layouts/main.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d8528304-6393-476a-96e3-a18936a27458.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/d8528304-6393-476a-96e3-a18936a27458.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AccountController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AccountController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CvController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CvController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Models/Account.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Account.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Models/Cv.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Cv.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/bootstrap.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.mix.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -157,9 +194,15 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/layouts" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\homestead\code\hr\resources\views\layouts" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -176,7 +219,7 @@
       <option name="presentableId" value="Default" />
       <updated>1606719628489</updated>
       <workItem from="1606719629670" duration="9270000" />
-      <workItem from="1606890242078" duration="17371000" />
+      <workItem from="1606890242078" duration="31792000" />
     </task>
     <servers />
   </component>
@@ -204,13 +247,17 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1293" height="271" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.3.1920.1040@0.0.1920.1040" timestamp="1606904739474" />
+    <state x="795" y="443" key="NewPhpFileDialog" timestamp="1606988598355">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="795" y="443" key="NewPhpFileDialog/0.0.1920.1040/-1920.3.1920.1040@0.0.1920.1040" timestamp="1606988598355" />
     <state x="842" y="407" width="316" height="245" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1606905893238">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="842" y="407" width="316" height="245" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.1920.1040/-1920.3.1920.1040@0.0.1920.1040" timestamp="1606905893238" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1606908491400">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1607016983748">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.3.1920.1040@0.0.1920.1040" timestamp="1606908491400" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.3.1920.1040@0.0.1920.1040" timestamp="1607016983748" />
   </component>
 </project>

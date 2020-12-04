@@ -13,8 +13,35 @@ class Cv extends Model
 
     public function account()
     {
-        return $this->belongsTo('App\Models\Acount', 'id', 'id_account');
+        return $this->belongsTo('App\Models\Account', 'id_account', 'id');
     }
 
+    public function experiences()
+    {
+        return $this->hasMany('App\Models\Experience', 'id_cv', 'id');
+    }
+
+    public function employments()
+    {
+        return $this->belongsToMany(
+            Employment::class,
+            'cv_empl',
+            'id_cv',
+            'id_empl');
+    }
+
+    public function work_schedule()
+    {
+        return $this->belongsToMany(
+            WorkSchedule::class,
+            'cv_ws',
+            'id_cv',
+            'id_ws');
+    }
+
+    public function specialization()
+    {
+        return $this->belongsTo('App\Models\Specialization', 'id_specialization', 'id');
+    }
 
 }

@@ -18,6 +18,6 @@ class Account extends Model
 
     public function city()
     {
-        return $this->belongsTo('App\Models\cities','id_city','id');
+        return $this->belongsTo('App\Models\City','id_city','id');
     }
 }

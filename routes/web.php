@@ -22,7 +22,9 @@ Route::get('/', function () {
 Route::resource('/resumes', \App\Http\Controllers\AccountController::class);
 Route::resource('/cv', \App\Http\Controllers\CvController::class);
 
-
+Route::get('/test', function (){
+    return view('cv.cv-list');
+});
 
 Auth::routes();
 

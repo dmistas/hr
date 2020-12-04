@@ -14,7 +14,7 @@ class CvController extends Controller
      */
     public function index()
     {
-        return Cv::all();
+        echo "cv index method";
     }
 
     /**
@@ -42,11 +42,13 @@ class CvController extends Controller
      * Display the specified resource.
      *
      * @param  int  $id
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Database\Eloquent\Builder[]|\Illuminate\Database\Eloquent\Collection|\Illuminate\Http\Response
      */
     public function show($id)
     {
-        //
+        $resume = Cv::with('account', 'experiences', 'specialization')->where('id', $id)->get();
+        dd($resume);
+        return $resume;
     }
 
     /**
