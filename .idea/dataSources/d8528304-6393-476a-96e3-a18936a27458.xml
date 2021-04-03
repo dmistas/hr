@@ -843,382 +843,392 @@ SELECT|sys.sys_config:null
       <Position>11</Position>
       <DataType>timestamp|0s</DataType>
     </column>
-    <index id="263" parent="239" name="accounts_id_city_foreign">
+    <column id="263" parent="239" name="photo">
+      <Position>12</Position>
+      <DataType>varchar(255)|0s</DataType>
+    </column>
+    <index id="264" parent="239" name="accounts_id_city_foreign">
       <ColNames>id_city</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="264" parent="239" name="PRIMARY">
+    <key id="265" parent="239" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="265" parent="239" name="accounts_id_city_foreign">
+    <foreign-key id="266" parent="239" name="accounts_id_city_foreign">
       <ColNames>id_city</ColNames>
       <RefTableName>cities</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <column id="266" parent="240" name="id">
+    <column id="267" parent="240" name="id">
       <Position>1</Position>
       <DataType>bigint(20) unsigned|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>null</SequenceIdentity>
     </column>
-    <column id="267" parent="240" name="city_name">
+    <column id="268" parent="240" name="city_name">
       <Position>2</Position>
       <DataType>varchar(100)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <key id="268" parent="240" name="PRIMARY">
+    <key id="269" parent="240" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="269" parent="241" name="id_cv">
+    <column id="270" parent="241" name="id_cv">
       <Position>1</Position>
       <DataType>bigint(20) unsigned|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="270" parent="241" name="id_empl">
+    <column id="271" parent="241" name="id_empl">
       <Position>2</Position>
       <DataType>bigint(20) unsigned|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <index id="271" parent="241" name="cv_empl_id_cv_foreign">
+    <index id="272" parent="241" name="cv_empl_id_cv_foreign">
       <ColNames>id_cv</ColNames>
       <Type>btree</Type>
     </index>
-    <index id="272" parent="241" name="cv_empl_id_empl_foreign">
+    <index id="273" parent="241" name="cv_empl_id_empl_foreign">
       <ColNames>id_empl</ColNames>
       <Type>btree</Type>
     </index>
-    <foreign-key id="273" parent="241" name="cv_empl_id_cv_foreign">
+    <foreign-key id="274" parent="241" name="cv_empl_id_cv_foreign">
       <ColNames>id_cv</ColNames>
       <RefTableName>cvs</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <foreign-key id="274" parent="241" name="cv_empl_id_empl_foreign">
+    <foreign-key id="275" parent="241" name="cv_empl_id_empl_foreign">
       <ColNames>id_empl</ColNames>
       <RefTableName>employment</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <column id="275" parent="242" name="id_cv">
+    <column id="276" parent="242" name="id_cv">
       <Position>1</Position>
       <DataType>bigint(20) unsigned|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="276" parent="242" name="id_ws">
+    <column id="277" parent="242" name="id_ws">
       <Position>2</Position>
       <DataType>bigint(20) unsigned|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <index id="277" parent="242" name="cv_ws_id_cv_foreign">
+    <index id="278" parent="242" name="cv_ws_id_cv_foreign">
       <ColNames>id_cv</ColNames>
       <Type>btree</Type>
     </index>
-    <index id="278" parent="242" name="cv_ws_id_ws_foreign">
+    <index id="279" parent="242" name="cv_ws_id_ws_foreign">
       <ColNames>id_ws</ColNames>
       <Type>btree</Type>
     </index>
-    <foreign-key id="279" parent="242" name="cv_ws_id_cv_foreign">
+    <foreign-key id="280" parent="242" name="cv_ws_id_cv_foreign">
       <ColNames>id_cv</ColNames>
       <RefTableName>cvs</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <foreign-key id="280" parent="242" name="cv_ws_id_ws_foreign">
+    <foreign-key id="281" parent="242" name="cv_ws_id_ws_foreign">
       <ColNames>id_ws</ColNames>
       <RefTableName>work_schedule</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <column id="281" parent="243" name="id">
+    <column id="282" parent="243" name="id">
       <Position>1</Position>
       <DataType>bigint(20) unsigned|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>null</SequenceIdentity>
     </column>
-    <column id="282" parent="243" name="id_account">
+    <column id="283" parent="243" name="id_account">
       <Position>2</Position>
       <DataType>bigint(20) unsigned|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="283" parent="243" name="id_specialization">
+    <column id="284" parent="243" name="id_specialization">
       <Position>3</Position>
       <DataType>bigint(20) unsigned|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="284" parent="243" name="salary">
+    <column id="285" parent="243" name="salary">
       <Position>4</Position>
       <DataType>int(11)|0s</DataType>
     </column>
-    <column id="285" parent="243" name="about">
+    <column id="286" parent="243" name="about">
       <Position>5</Position>
       <DataType>text|0s</DataType>
     </column>
-    <column id="286" parent="243" name="created_at">
+    <column id="287" parent="243" name="created_at">
       <Position>6</Position>
       <DataType>timestamp|0s</DataType>
     </column>
-    <column id="287" parent="243" name="updated_at">
+    <column id="288" parent="243" name="updated_at">
       <Position>7</Position>
       <DataType>timestamp|0s</DataType>
     </column>
-    <index id="288" parent="243" name="cvs_id_account_foreign">
+    <index id="289" parent="243" name="cvs_id_account_foreign">
       <ColNames>id_account</ColNames>
       <Type>btree</Type>
     </index>
-    <index id="289" parent="243" name="cvs_id_specialization_foreign">
+    <index id="290" parent="243" name="cvs_id_specialization_foreign">
       <ColNames>id_specialization</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="290" parent="243" name="PRIMARY">
+    <key id="291" parent="243" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="291" parent="243" name="cvs_id_account_foreign">
+    <foreign-key id="292" parent="243" name="cvs_id_account_foreign">
       <ColNames>id_account</ColNames>
       <RefTableName>accounts</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <foreign-key id="292" parent="243" name="cvs_id_specialization_foreign">
+    <foreign-key id="293" parent="243" name="cvs_id_specialization_foreign">
       <ColNames>id_specialization</ColNames>
       <RefTableName>specialization</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <column id="293" parent="244" name="id">
+    <column id="294" parent="244" name="id">
       <Position>1</Position>
       <DataType>bigint(20) unsigned|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>null</SequenceIdentity>
     </column>
-    <column id="294" parent="244" name="type_empl">
+    <column id="295" parent="244" name="type_empl">
       <Position>2</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <key id="295" parent="244" name="PRIMARY">
+    <key id="296" parent="244" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="296" parent="245" name="id_cv">
+    <column id="297" parent="245" name="id_cv">
       <Position>1</Position>
       <DataType>bigint(20) unsigned|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="297" parent="245" name="organization">
+    <column id="298" parent="245" name="organization">
       <Position>2</Position>
       <DataType>varchar(50)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="298" parent="245" name="position">
+    <column id="299" parent="245" name="position">
       <Position>3</Position>
       <DataType>varchar(45)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="299" parent="245" name="responsibility">
+    <column id="300" parent="245" name="responsibility">
       <Position>4</Position>
       <DataType>text|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="300" parent="245" name="start_date">
+    <column id="301" parent="245" name="start_date">
       <Position>5</Position>
       <DataType>date|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="301" parent="245" name="stop_date">
+    <column id="302" parent="245" name="stop_date">
       <Position>6</Position>
       <DataType>date|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="302" parent="245" name="id">
+    <column id="303" parent="245" name="id">
       <Position>7</Position>
       <DataType>bigint(20) unsigned|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>null</SequenceIdentity>
     </column>
-    <index id="303" parent="245" name="experience_id_cv_foreign">
+    <column id="304" parent="245" name="work_until_now">
+      <Position>8</Position>
+      <DataType>tinyint(1)|0s</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>0</DefaultExpression>
+    </column>
+    <index id="305" parent="245" name="experience_id_cv_foreign">
       <ColNames>id_cv</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="304" parent="245" name="PRIMARY">
+    <key id="306" parent="245" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="305" parent="245" name="experience_id_cv_foreign">
+    <foreign-key id="307" parent="245" name="experience_id_cv_foreign">
       <ColNames>id_cv</ColNames>
       <RefTableName>cvs</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <column id="306" parent="246" name="id">
+    <column id="308" parent="246" name="id">
       <Position>1</Position>
       <DataType>bigint(20) unsigned|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>null</SequenceIdentity>
     </column>
-    <column id="307" parent="246" name="uuid">
+    <column id="309" parent="246" name="uuid">
       <Position>2</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="308" parent="246" name="connection">
+    <column id="310" parent="246" name="connection">
       <Position>3</Position>
       <DataType>text|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="309" parent="246" name="queue">
+    <column id="311" parent="246" name="queue">
       <Position>4</Position>
       <DataType>text|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="310" parent="246" name="payload">
+    <column id="312" parent="246" name="payload">
       <Position>5</Position>
       <DataType>longtext|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="311" parent="246" name="exception">
+    <column id="313" parent="246" name="exception">
       <Position>6</Position>
       <DataType>longtext|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="312" parent="246" name="failed_at">
+    <column id="314" parent="246" name="failed_at">
       <Position>7</Position>
       <DataType>timestamp|0s</DataType>
       <NotNull>1</NotNull>
       <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
     </column>
-    <index id="313" parent="246" name="failed_jobs_uuid_unique">
+    <index id="315" parent="246" name="failed_jobs_uuid_unique">
       <ColNames>uuid</ColNames>
       <Unique>1</Unique>
       <Type>btree</Type>
     </index>
-    <key id="314" parent="246" name="PRIMARY">
+    <key id="316" parent="246" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <key id="315" parent="246" name="failed_jobs_uuid_unique">
+    <key id="317" parent="246" name="failed_jobs_uuid_unique">
       <ColNames>uuid</ColNames>
       <UnderlyingIndexName>failed_jobs_uuid_unique</UnderlyingIndexName>
     </key>
-    <column id="316" parent="247" name="id">
+    <column id="318" parent="247" name="id">
       <Position>1</Position>
       <DataType>int(10) unsigned|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>null</SequenceIdentity>
     </column>
-    <column id="317" parent="247" name="migration">
+    <column id="319" parent="247" name="migration">
       <Position>2</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="318" parent="247" name="batch">
+    <column id="320" parent="247" name="batch">
       <Position>3</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <key id="319" parent="247" name="PRIMARY">
+    <key id="321" parent="247" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="320" parent="248" name="email">
+    <column id="322" parent="248" name="email">
       <Position>1</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="321" parent="248" name="token">
+    <column id="323" parent="248" name="token">
       <Position>2</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="322" parent="248" name="created_at">
+    <column id="324" parent="248" name="created_at">
       <Position>3</Position>
       <DataType>timestamp|0s</DataType>
     </column>
-    <index id="323" parent="248" name="password_resets_email_index">
+    <index id="325" parent="248" name="password_resets_email_index">
       <ColNames>email</ColNames>
       <Type>btree</Type>
     </index>
-    <column id="324" parent="249" name="id">
+    <column id="326" parent="249" name="id">
       <Position>1</Position>
       <DataType>bigint(20) unsigned|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>null</SequenceIdentity>
     </column>
-    <column id="325" parent="249" name="specialization">
+    <column id="327" parent="249" name="specialization">
       <Position>2</Position>
       <DataType>varchar(45)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <key id="326" parent="249" name="PRIMARY">
+    <key id="328" parent="249" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="327" parent="250" name="id">
+    <column id="329" parent="250" name="id">
       <Position>1</Position>
       <DataType>bigint(20) unsigned|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>null</SequenceIdentity>
     </column>
-    <column id="328" parent="250" name="name">
+    <column id="330" parent="250" name="name">
       <Position>2</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="329" parent="250" name="email">
+    <column id="331" parent="250" name="email">
       <Position>3</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="330" parent="250" name="email_verified_at">
+    <column id="332" parent="250" name="email_verified_at">
       <Position>4</Position>
       <DataType>timestamp|0s</DataType>
     </column>
-    <column id="331" parent="250" name="password">
+    <column id="333" parent="250" name="password">
       <Position>5</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="332" parent="250" name="remember_token">
+    <column id="334" parent="250" name="remember_token">
       <Position>6</Position>
       <DataType>varchar(100)|0s</DataType>
     </column>
-    <column id="333" parent="250" name="created_at">
+    <column id="335" parent="250" name="created_at">
       <Position>7</Position>
       <DataType>timestamp|0s</DataType>
     </column>
-    <column id="334" parent="250" name="updated_at">
+    <column id="336" parent="250" name="updated_at">
       <Position>8</Position>
       <DataType>timestamp|0s</DataType>
     </column>
-    <index id="335" parent="250" name="users_email_unique">
+    <index id="337" parent="250" name="users_email_unique">
       <ColNames>email</ColNames>
       <Unique>1</Unique>
       <Type>btree</Type>
     </index>
-    <key id="336" parent="250" name="PRIMARY">
+    <key id="338" parent="250" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <key id="337" parent="250" name="users_email_unique">
+    <key id="339" parent="250" name="users_email_unique">
       <ColNames>email</ColNames>
       <UnderlyingIndexName>users_email_unique</UnderlyingIndexName>
     </key>
-    <column id="338" parent="251" name="id">
+    <column id="340" parent="251" name="id">
       <Position>1</Position>
       <DataType>bigint(20) unsigned|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>null</SequenceIdentity>
     </column>
-    <column id="339" parent="251" name="ws">
+    <column id="341" parent="251" name="ws">
       <Position>2</Position>
       <DataType>varchar(45)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <key id="340" parent="251" name="PRIMARY">
+    <key id="342" parent="251" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>

@@ -10,7 +10,7 @@ class AccountController extends Controller
     /**
      * Display a listing of the resource.
      *
-     * @return \Illuminate\Http\Response
+     * @return Account[]|\Illuminate\Database\Eloquent\Collection|\Illuminate\Http\Response
      */
     public function index()
     {
@@ -54,7 +54,7 @@ class AccountController extends Controller
 //        }
         $resumes = Account::with('resumes', 'city', )->where('id', $id)->get();
 //        $resumes = $account->resumes;
-        dump($resumes);
+        dd(collect($resumes->toArray()));
 //        dump(Account::with('resumes')->get());
         return $resumes;
     }
