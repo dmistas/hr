@@ -32,7 +32,7 @@ class AccountFactory extends Factory
             },
             'email' => $this->faker->email,
             'phone' => $this->faker->phoneNumber,
-            'photo' => $this->faker->imageUrl(),
+            'photo' => $this->faker->imageUrl(300, 300),
 
         ];
     }

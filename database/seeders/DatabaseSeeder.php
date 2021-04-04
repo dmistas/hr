@@ -26,6 +26,10 @@ class DatabaseSeeder extends Seeder
         DB::table('specialization')->insert($this->getSpecialization());
         Account::factory(10)->create();
         Cv::factory(20)->has(Experience::factory()->count(2))->create();
+        DB::table('cv_ws')->insert($this->getCvWsPivot());
+        DB::table('cv_empl')->insert($this->getCvEmplPivot());
+
+        // todo добавить заполнение связывающих таблиц
     }
 
     public function getEmployment()
@@ -41,43 +45,69 @@ class DatabaseSeeder extends Seeder
     public function getWorkSchedule()
     {
         return [
-          ['ws'=>'Полный день'],
-          ['ws'=>'Сменный график'],
-          ['ws'=>'Гибкий график'],
-          ['ws'=>'Удалённая работа'],
-          ['ws'=>'Вахтовый метод'],
+            ['ws' => 'Полный день'],
+            ['ws' => 'Сменный график'],
+            ['ws' => 'Гибкий график'],
+            ['ws' => 'Удалённая работа'],
+            ['ws' => 'Вахтовый метод'],
         ];
     }
 
     public function getSpecialization()
     {
         return [
-          ['specialization' => 'Администратор баз данных'],
-          ['specialization' => 'Аналитик'],
-          ['specialization' => 'Арт-директор'],
-          ['specialization' => 'Инженер'],
-          ['specialization' => 'Компьютерная безопасность'],
-          ['specialization' => 'Контент'],
-          ['specialization' => 'Маркетинг'],
-          ['specialization' => 'Мультимедиа'],
-          ['specialization' => 'Оптимизация сайта (SEO)'],
-          ['specialization' => 'Передача данных и доступ в интернет'],
-          ['specialization' => 'Программирование, Разработка'],
-          ['specialization' => 'Продажи'],
-          ['specialization' => 'Продюсер'],
-          ['specialization' => 'Развитие бизнеса'],
-          ['specialization' => 'Системный администратор'],
-          ['specialization' => 'Системы управления предприятием (ERP)'],
-          ['specialization' => 'Сотовые, Беспроводные технологии'],
-          ['specialization' => 'Стартапы'],
-          ['specialization' => 'Телекоммуникации'],
-          ['specialization' => 'Тестирование'],
-          ['specialization' => 'Технический писатель'],
-          ['specialization' => 'Управление проектами'],
-          ['specialization' => 'Электронная коммерция'],
-          ['specialization' => 'CRM системы'],
-          ['specialization' => 'Web инженер'],
-          ['specialization' => 'Web мастер'],
+            ['specialization' => 'Администратор баз данных'],
+            ['specialization' => 'Аналитик'],
+            ['specialization' => 'Арт-директор'],
+            ['specialization' => 'Инженер'],
+            ['specialization' => 'Компьютерная безопасность'],
+            ['specialization' => 'Контент'],
+            ['specialization' => 'Маркетинг'],
+            ['specialization' => 'Мультимедиа'],
+            ['specialization' => 'Оптимизация сайта (SEO)'],
+            ['specialization' => 'Передача данных и доступ в интернет'],
+            ['specialization' => 'Программирование, Разработка'],
+            ['specialization' => 'Продажи'],
+            ['specialization' => 'Продюсер'],
+            ['specialization' => 'Развитие бизнеса'],
+            ['specialization' => 'Системный администратор'],
+            ['specialization' => 'Системы управления предприятием (ERP)'],
+            ['specialization' => 'Сотовые, Беспроводные технологии'],
+            ['specialization' => 'Стартапы'],
+            ['specialization' => 'Телекоммуникации'],
+            ['specialization' => 'Тестирование'],
+            ['specialization' => 'Технический писатель'],
+            ['specialization' => 'Управление проектами'],
+            ['specialization' => 'Электронная коммерция'],
+            ['specialization' => 'CRM системы'],
+            ['specialization' => 'Web инженер'],
+            ['specialization' => 'Web мастер'],
         ];
+    }
+
+    public function getCvWsPivot(): array
+    {
+        $cvs = Cv::all();
+        $data = [];
+        foreach ($cvs as $cv) {
+            $data[] = [
+                'id_cv' => $cv->id,
+                'id_ws' => DB::table('work_schedule')->inRandomOrder()->first()->id,
+            ];
+        }
+        return $data;
+    }
+
+    public function getCvEmplPivot(): array
+    {
+        $cvs = Cv::all();
+        $data = [];
+        foreach ($cvs as $cv) {
+            $data[] = [
+                'id_cv' => $cv->id,
+                'id_empl' => DB::table('employment')->inRandomOrder()->first()->id,
+            ];
+        }
+        return $data;
     }
 }
