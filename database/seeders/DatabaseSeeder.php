@@ -37,7 +37,7 @@ class DatabaseSeeder extends Seeder
         return [
             ['type_empl' => 'Полная занятость'],
             ['type_empl' => 'Проектная/Временная работа'],
-            ['type_empl' => 'Волонтёрствоь'],
+            ['type_empl' => 'Волонтёрство'],
             ['type_empl' => 'Стажировка'],
         ];
     }
